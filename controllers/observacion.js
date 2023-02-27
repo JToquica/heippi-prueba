@@ -76,8 +76,9 @@ const getObservacionByMedicosHospital = async (req, resp = response) => {
 
 const generarReporte = async (req, resp = response) => {
     try {
-        const idPaciente = req.params.id;
+        let idPaciente = req.params.id;
         const paciente = await Usuario.findOne({identificacion: idPaciente});
+        idPaciente = paciente._id;
 
         const observaciones = await Observacion.find({idPaciente})
                                     .populate('idPaciente')
