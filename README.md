@@ -164,5 +164,5 @@ Ejemplo:
 #### - (GET) Obtener Observaciones por Hospital: /observacion/hospital
 #### PD: Se debe iniciar sesión como Hospital y se envia el token en el header("Bearer token")
 
-#### - (GET) Generar Reporte: /generar-reporte/id
+#### - (GET) Generar Reporte: /observacion/generar-reporte/id
 #### PD: Se reemplaza la palabra id en el path variable por la identificacion del usuario
