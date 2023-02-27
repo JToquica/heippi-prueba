@@ -1,4 +1,6 @@
 # PRUEBA - HEIPPI
+## PRESENTADA POR: José Toquica
+
 ## LINK BASE URL: https://heippi-prueba-production.up.railway.app/api
 
 ### PD: Para usarlo se debe concatenar el url base + peticion.
@@ -82,7 +84,7 @@ Ejemplo:
     "tipoUsuario": "Medico",
     "fechaNacimiento": "01-01-1990"
 }
-
+```
 
 #### - (POST) Iniciar Sesión: /auth/login
 #### Parametros:
@@ -133,6 +135,8 @@ Ejemplo:
 }
 ```
 
+### OBSERVACIONES:
+
 #### - (POST) Registrar Observación: /observacion/create
 #### PD: Se debe iniciar sesión como medico y se envia el token en el header("Bearer token")
 #### Parametros:
@@ -150,7 +154,6 @@ Ejemplo:
     "idPaciente": "63fb71d4ba5426ad86b8332f"
 }
 ```
-
 
 #### - (GET) Obtener Observaciones Paciente: /observacion
 #### PD: Se debe iniciar sesión como Paciente y se envia el token en el header("Bearer token")
