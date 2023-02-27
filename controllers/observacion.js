@@ -128,7 +128,8 @@ const generarReporte = async (req, resp = response) => {
         console.log(error);
         return resp.status(400).json({
             ok: false,
-            msg: "Error al generar reporte"
+            msg: "Error al generar reporte",
+            error: error
         });
     }
 }
