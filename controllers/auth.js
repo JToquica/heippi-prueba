@@ -208,6 +208,7 @@ const solicitarVerificacion = async (req, resp = response) => {
         return resp.status(500).json({
             ok: false,
             msg: 'Ha ocurrido un error al solicitar la verificación tu cuenta',
+            error: error
         });
     }
 }
