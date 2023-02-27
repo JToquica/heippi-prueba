@@ -165,4 +165,4 @@ Ejemplo:
 #### PD: Se debe iniciar sesión como Hospital y se envia el token en el header("Bearer token")
 
 #### - (GET) Generar Reporte: /generar-reporte/id
-PD: Se reemplaza la palabra id en el path variable por la identificacion del usuario
+#### PD: Se reemplaza la palabra id en el path variable por la identificacion del usuario
