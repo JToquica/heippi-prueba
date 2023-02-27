@@ -204,6 +204,7 @@ const solicitarVerificacion = async (req, resp = response) => {
             msg: `Se ha enviado un correo electrónico para verificar tu cuenta a ${usuario.email}`,
         });
     } catch (error) {
+        console.log(error);
         return resp.status(500).json({
             ok: false,
             msg: 'Ha ocurrido un error al solicitar la verificación tu cuenta',
