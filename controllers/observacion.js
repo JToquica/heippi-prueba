@@ -78,6 +78,14 @@ const generarReporte = async (req, resp = response) => {
     try {
         let idPaciente = req.params.id;
         const paciente = await Usuario.findOne({identificacion: idPaciente});
+
+        if (!paciente) {
+            return resp.status(200).json({
+                ok: true,
+                msg: "No se encontro un paciente registrado con esa identificación"
+            });
+        }
+
         idPaciente = paciente._id;
 
         const observaciones = await Observacion.find({idPaciente})
